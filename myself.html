@@ -1,0 +1,99 @@
+<html>
+     <head>
+<title>All About Myself</title>
+<link rel="stylesheet" href="style.css">
+     </head>   
+<body>
+<div class="main">
+<nav>
+    <div class="logo">
+         <img src="pictures/Welcome.png">
+    </div>
+    <div class="nav-links">
+    <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Phone</a></li>
+         <li><a href="#">Family</a></li>
+         <li><a href="#">Decription</a></li>
+    </ul>
+    </div>
+</nav>
+
+      <div class="information">
+           <div class="overlay"> </div>
+           <img src="pictures/me.jpg" class="Me">
+           <div id="circle">
+                 <div class="feature one">
+                      <image src="pictures/profile.png">
+                      <div>
+                             <h1>Profile</h1>
+                                  <p>Name: Ariel B. Angeles
+                                       <br>
+                                Age: 20
+                                <br>
+                                Contact #: 09758762599
+                                <br>
+                                Facebook Account: Ariel Angeles
+                             </p>
+                      </div>
+                    </div>
+                 <div class="feature two">
+                      <image src="pictures/adress.png">
+                      <div>
+                             <h1>Address</h1>
+                                  <p>Pinamudlan San Francisco Southern Leyte</p>
+                              </div>
+                         </div>
+                 <div class="feature three">
+                      <image src="pictures/education.png">
+                      <div>
+                      <h1>Education</h1>
+                      <p>School: Southern Leyte <br>
+                           State University
+                           <br>
+                           Course: BsInfo-tech 1
+                      </p>
+                    </div>
+               </div>
+                 <div class="feature four">
+                      <image src="pictures/hobby.png">
+                      <div>
+                      <h1>Hobby</h1>
+                      <p>Gaming, Travel, Sports</p>
+                    </div>
+               </div>
+         
+      </div>
+          </div>
+          <div class="controls">
+               <img src="pictures/arrow.jpg" id="upBtn">
+               <h3>Information</h3>
+               <img src="pictures/arrow.jpg" id="downBtn">
+          </div>
+</div>
+
+<script>
+     var circle = document.getElementById("circle");
+     var upBtn = document.getElementById("upBtn");
+     var downBtn=document.getElementById("downBtn");
+
+     var rotateValue = circle.style.transform;
+     var rotateSum;
+
+
+     upBtn.onclick = function()
+     {
+          rotateSum = rotateValue + "rotate(-90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+     }
+     downBtn.onclick = function()
+     {
+          rotateSum = rotateValue + "rotate(90deg)";
+          circle.style.transform = rotateSum;
+          rotateValue = rotateSum;
+     }
+</script>
+
+</body>
+ </html>
